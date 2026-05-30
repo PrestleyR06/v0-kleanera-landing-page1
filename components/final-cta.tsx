@@ -10,7 +10,7 @@ export function FinalCTA() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="quote" ref={ref} className="py-24 lg:py-32 relative overflow-hidden">
+    <section id="quote" ref={ref} className="py-20 lg:py-28 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-primary/5" />
       
@@ -20,17 +20,17 @@ export function FinalCTA() {
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
             Ready to Experience Premium Property Care?
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 text-pretty">
+          <p className="text-lg text-muted-foreground mb-10 text-pretty">
             Book your professional cleaning service today.
           </p>
           

@@ -72,21 +72,21 @@ export function WhyChooseUs() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section ref={ref} className="py-24 lg:py-32 relative bg-muted/30">
+    <section ref={ref} className="py-20 lg:py-28 relative bg-muted/30">
       {/* Background accent */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
             Why Property Owners Choose Kleanera
           </h2>
           <p className="text-lg text-muted-foreground text-pretty">
@@ -99,7 +99,7 @@ export function WhyChooseUs() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {reasons.map((reason, index) => (
             <motion.div key={index} variants={itemVariants}>

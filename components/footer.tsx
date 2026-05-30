@@ -15,23 +15,24 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-foreground text-primary-foreground py-16 lg:py-20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <footer className="bg-foreground text-primary-foreground py-14 lg:py-16">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Logo & Tagline */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
-                src="/images/kleanera-logo.png"
+                src="/images/kleanera-icon.png"
                 alt="Kleanera Logo"
-                width={160}
-                height={45}
-                className="h-10 w-auto brightness-0 invert"
+                width={40}
+                height={40}
+                className="h-10 w-10 brightness-0 invert"
               />
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-primary-foreground leading-tight">Kleanera</span>
+                <span className="text-[10px] text-primary font-medium tracking-wide leading-tight">Elevating Property Standards</span>
+              </div>
             </Link>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Elevating Property Standards
-            </p>
             <p className="text-primary-foreground/60 text-sm mt-4 leading-relaxed">
               Premium professional cleaning services for landlords, Airbnb hosts, property managers and businesses.
             </p>

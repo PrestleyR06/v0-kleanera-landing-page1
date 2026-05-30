@@ -23,17 +23,17 @@ const services = [
   {
     title: "Communal Cleaning",
     description: "Regular maintenance of shared spaces, hallways, and residential common areas.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2032&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "Exterior Cleaning",
-    description: "Professional pressure washing and exterior surface cleaning for buildings.",
-    image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=2070&auto=format&fit=crop",
+    description: "Professional outdoor property cleaning and maintenance services.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2032&auto=format&fit=crop",
   },
   {
     title: "Carpet Cleaning",
     description: "Professional carpet extraction and deep cleaning to remove stains and odors.",
-    image: "https://images.unsplash.com/photo-1558618047-f4a7041dc6a1?q=80&w=2071&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=2070&auto=format&fit=crop",
   },
 ]
 
@@ -64,21 +64,21 @@ export function Services() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="services" ref={ref} className="py-24 lg:py-32 relative">
+    <section id="services" ref={ref} className="py-20 lg:py-28 relative">
       {/* Background accent */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
             Our Services
           </h2>
           <p className="text-lg text-muted-foreground text-pretty">
@@ -91,7 +91,7 @@ export function Services() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={itemVariants}>

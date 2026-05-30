@@ -37,18 +37,22 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <nav className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo and Brand */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/kleanera-logo.png"
+              src="/images/kleanera-icon.png"
               alt="Kleanera Logo"
-              width={180}
-              height={50}
-              className="h-10 w-auto"
+              width={44}
+              height={44}
+              className="h-11 w-11"
               priority
             />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground leading-tight">Kleanera</span>
+              <span className="text-[10px] text-primary font-medium tracking-wide leading-tight">Elevating Property Standards</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -95,7 +99,7 @@ export function Header() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-card/95 backdrop-blur-md border-b border-border"
           >
-            <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
+            <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}

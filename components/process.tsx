@@ -48,24 +48,24 @@ export function Process() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="process" ref={ref} className="py-24 lg:py-32 relative overflow-hidden">
+    <section id="process" ref={ref} className="py-20 lg:py-28 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-14"
         >
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             OUR PROCESS
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
             Simple, Structured, Seamless
           </h2>
           <p className="text-lg text-muted-foreground text-pretty">
