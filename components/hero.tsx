@@ -147,7 +147,7 @@ export function Hero() {
               <div className="bg-card/80 backdrop-blur-xl border border-border/50 rounded-xl p-4 md:p-5 shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <stats[0].icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                    <Building2 className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-foreground">
@@ -169,7 +169,7 @@ export function Hero() {
               <div className="bg-card/80 backdrop-blur-xl border border-border/50 rounded-xl p-4 md:p-5 shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <stats[1].icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                    <Users className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-foreground">
@@ -191,7 +191,7 @@ export function Hero() {
               <div className="bg-card/80 backdrop-blur-xl border border-border/50 rounded-xl p-4 md:p-5 shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <stats[2].icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                    <Repeat className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-foreground">
@@ -213,7 +213,7 @@ export function Hero() {
               <div className="bg-card/80 backdrop-blur-xl border border-border/50 rounded-xl p-4 md:p-5 shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <stats[3].icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                    <ClipboardCheck className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-foreground">
