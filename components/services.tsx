@@ -28,7 +28,7 @@ const services = [
   {
     title: "Exterior Cleaning",
     description: "Professional outdoor property cleaning and maintenance services.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "Carpet Cleaning",

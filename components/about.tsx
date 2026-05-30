@@ -3,7 +3,6 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { CheckCircle2 } from "lucide-react"
-import Image from "next/image"
 
 const values = [
   "Professional, vetted cleaning teams",
@@ -36,36 +35,12 @@ export function About() {
           >
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop"
-                alt="Kleanera professional cleaning team"
+                src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop"
+                alt="Professional cleaner at work"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
             </div>
-            
-            {/* Floating Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 bg-card border border-border/50 rounded-xl p-4 shadow-xl"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Image
-                    src="/images/kleanera-icon.png"
-                    alt="Kleanera"
-                    width={32}
-                    height={32}
-                    className="w-8 h-8"
-                  />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">5+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Content Side */}
