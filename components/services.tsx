@@ -23,12 +23,12 @@ const services = [
   {
     title: "Communal Cleaning",
     description: "Regular maintenance of shared spaces, hallways, and residential common areas.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
   },
   {
     title: "Exterior Cleaning",
     description: "Professional outdoor property cleaning and maintenance services.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2032&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "Carpet Cleaning",

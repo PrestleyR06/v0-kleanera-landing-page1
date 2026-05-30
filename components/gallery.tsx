@@ -6,14 +6,9 @@ import { Card } from "@/components/ui/card"
 
 const galleryItems = [
   {
-    title: "Kitchen Deep Clean",
-    before: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070&auto=format&fit=crop",
-    after: "https://images.unsplash.com/photo-1556909172-89cf0b24ff73?q=80&w=2070&auto=format&fit=crop",
-  },
-  {
-    title: "Carpet Restoration",
-    before: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2032&auto=format&fit=crop",
-    after: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop",
+    title: "Airbnb Turnover",
+    before: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
+    after: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
   },
   {
     title: "Living Room Transformation",
