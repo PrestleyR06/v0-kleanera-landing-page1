@@ -3,6 +3,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Kregan DEMO font for logo - custom font */
+@font-face {
+  font-family: 'Kregan DEMO';
+  src: url('/fonts/Kregan-DEMO-Regular.otf') format('opentype'),
+       url('/fonts/Kregan-DEMO-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #f3faff;
   --foreground: #3c4856;
@@ -75,7 +85,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-sans: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
+  --font-heading: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-logo: 'Kregan DEMO', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -125,6 +137,15 @@
   html {
     scroll-behavior: smooth;
   }
+  /* Apply Inter font to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Logo font utility class */
+.font-logo {
+  font-family: var(--font-logo);
 }
 
 /* Custom scrollbar */

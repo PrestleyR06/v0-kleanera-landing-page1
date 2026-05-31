@@ -51,7 +51,7 @@ export function Header() {
               priority
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground leading-tight">Kleanera</span>
+              <span className="text-xl font-bold text-foreground leading-tight font-logo">Kleanera</span>
               <span className="text-[10px] text-primary font-medium tracking-wide leading-tight">Elevating Property Standards</span>
             </div>
           </Link>

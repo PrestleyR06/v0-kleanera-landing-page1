@@ -7,18 +7,18 @@ import { Card } from "@/components/ui/card"
 const galleryItems = [
   {
     title: "Airbnb Turnover",
-    before: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
-    after: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
+    before: "/images/airbnb-before.png",
+    after: "/images/airbnb-after.png",
   },
   {
     title: "Living Room Transformation",
-    before: "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?q=80&w=2070&auto=format&fit=crop",
-    after: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop",
+    before: "/images/living-before.png",
+    after: "/images/living-after.png",
   },
   {
     title: "Bathroom Refresh",
-    before: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1974&auto=format&fit=crop",
-    after: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop",
+    before: "/images/bathroom-before.png",
+    after: "/images/bathroom-after.png",
   },
 ]
 

@@ -29,7 +29,7 @@ export function Footer() {
                 className="h-10 w-10 brightness-0 invert"
               />
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-primary-foreground leading-tight">Kleanera</span>
+                <span className="text-lg font-bold text-primary-foreground leading-tight font-logo">Kleanera</span>
                 <span className="text-[10px] text-primary font-medium tracking-wide leading-tight">Elevating Property Standards</span>
               </div>
             </Link>
