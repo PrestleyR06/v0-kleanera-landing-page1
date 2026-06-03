@@ -20,17 +20,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Logo & Tagline */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
+            <Link href="/" className="flex items-center gap-3 mb-4 font-sans">
               <Image
                 src="/images/kleanera-icon.png"
                 alt="Kleanera Logo"
                 width={40}
                 height={40}
-                className="h-10 w-10 brightness-0 invert"
+                className="h-10 w-10 brightness-0 invert font-sans"
               />
-              <div className="flex flex-col">
+              <div className="flex flex-col font-sans">
                 <span className="text-lg font-bold text-primary-foreground leading-tight font-logo">Kleanera</span>
-                <span className="text-[10px] text-primary font-medium tracking-wide leading-tight">Elevating Property Standards</span>
+                <span className="text-[10px] text-primary font-medium tracking-wide leading-tight font-sans">Elevating Property Standards</span>
               </div>
             </Link>
             <p className="text-primary-foreground/60 text-sm mt-4 leading-relaxed">
@@ -86,24 +86,24 @@ export function Footer() {
                   href="https://wa.me/447310471562"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary transition-colors duration-200 text-sm"
+                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary transition-colors duration-200 text-sm font-sans"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 font-sans" />
                   +44 7310 471562
                 </Link>
               </li>
               <li>
                 <Link
                   href="mailto:hello@kleanera.co.uk"
-                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary transition-colors duration-200 text-sm"
+                  className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary transition-colors duration-200 text-sm font-sans"
                 >
-                  <Mail className="w-4 h-4" />
+                  <Mail className="w-4 h-4 font-sans" />
                   hello@kleanera.co.uk
                 </Link>
               </li>
               <li>
-                <div className="flex items-start gap-3 text-primary-foreground/70 text-sm">
-                  <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <div className="flex items-start gap-3 text-primary-foreground/70 text-sm font-sans">
+                  <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 font-sans" />
                   <span>London, United Kingdom</span>
                 </div>
               </li>
