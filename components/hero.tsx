@@ -78,19 +78,21 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Hero Image - Full width with overlay */}
+        {/* Hero Image - Fully Responsive across all screen sizes */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="mt-10 pb-0 -mx-6 lg:-mx-8"
+          className="mt-10 pb-0 -mx-6 md:-mx-8 lg:-mx-8 xl:-mx-8"
         >
-          <div className="relative w-full aspect-[16/9] overflow-hidden shadow-2xl">
-            {/* Background Image */}
+          <div className="responsive-hero-image">
+            {/* Background Image - Optimized for all breakpoints */}
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20image-W5AJiz9p3s3bP3khhUzhTE7Tv2y1n2.png"
               alt="Kleanera professional cleaning team with branded uniforms"
-              className="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+              className="w-full h-full object-cover object-center"
             />
             
             {/* Soft Dark Overlay for Text Readability */}
