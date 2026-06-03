@@ -78,19 +78,23 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Hero Image - Reduced size, balanced proportions */}
+        {/* Hero Image - Full width with overlay */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="mt-6 pb-16"
+          className="mt-10 pb-0 -mx-6 lg:-mx-8"
         >
-          <div className="relative w-full max-w-4xl mx-auto aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative w-full aspect-[16/9] overflow-hidden shadow-2xl">
+            {/* Background Image */}
             <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop"
-              alt="Professional cleaner cleaning a modern office space"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20image-W5AJiz9p3s3bP3khhUzhTE7Tv2y1n2.png"
+              alt="Kleanera professional cleaning team with branded uniforms"
               className="w-full h-full object-cover"
             />
+            
+            {/* Soft Dark Overlay for Text Readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/30" />
           </div>
         </motion.div>
       </div>

@@ -7,18 +7,23 @@ import { Card } from "@/components/ui/card"
 const galleryItems = [
   {
     title: "Airbnb Turnover",
-    before: "/images/airbnb-before.png",
-    after: "/images/airbnb-after.png",
+    before: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Airbnb%20dirty%20room-VKYAgzL5xOiEbyHnRt3ySniERDpFZc.jpeg",
+    after: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Airbnb%20clean%20room-9URKewcQvEpzH3gbRUJrNbQwKpcnba.jpeg",
   },
   {
     title: "Living Room Transformation",
-    before: "/images/living-before.png",
-    after: "/images/living-after.png",
+    before: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Living%20room%20dirty-hm0D5tkCn315YgGbBpg6AVePouzyT3.jpeg",
+    after: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Living%20room%20clean-pAngJjIYWSbktg2M0vKbep68mxHHGV.jpeg",
+  },
+  {
+    title: "Office Cleanup",
+    before: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dirty%20office-K65zn08A9FAKiDzeO19QuQTgFpiRuy.jpeg",
+    after: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Clean%20office-tyXtWO8R5ZWrgG2dr1ob3lUTP05bnU.jpeg",
   },
   {
     title: "Bathroom Refresh",
-    before: "/images/bathroom-before.png",
-    after: "/images/bathroom-after.png",
+    before: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dirty%20bathroom-nNYiVlCMXX8M7GoA7cCchUIJy478gC.png",
+    after: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clean%20bathroom-y1nmGIiUuaP6eDAVM3zlTpJw4qsD9N.png",
   },
 ]
 
