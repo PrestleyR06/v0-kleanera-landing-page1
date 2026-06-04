@@ -41,18 +41,18 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <nav className="flex items-center justify-between h-20">
           {/* Logo and Brand */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3 font-sans">
             <Image
               src="/images/kleanera-icon.png"
               alt="Kleanera Logo"
               width={44}
               height={44}
-              className="h-11 w-11"
+              className="h-11 w-11 font-sans"
               priority
             />
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground leading-tight">Kleanera</span>
-              <span className="text-[10px] text-primary font-medium tracking-wide leading-tight">Elevating Property Standards</span>
+            <div className="flex flex-col font-sans">
+              <span className="text-xl font-bold text-foreground leading-tight font-logo">Kleanera</span>
+              <span className="text-[10px] text-primary font-medium tracking-wide leading-tight font-sans">Elevating Property Standards</span>
             </div>
           </Link>
 
@@ -82,7 +82,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground font-sans"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

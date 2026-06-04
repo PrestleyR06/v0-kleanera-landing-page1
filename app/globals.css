@@ -3,6 +3,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Kregan DEMO font for logo - custom font */
+@font-face {
+  font-family: 'Kregan DEMO';
+  src: url('/fonts/Kregan-DEMO-Regular.otf') format('opentype'),
+       url('/fonts/Kregan-DEMO-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #f3faff;
   --foreground: #3c4856;
@@ -75,7 +85,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-sans: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
+  --font-heading: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-logo: 'Kregan DEMO', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -124,6 +136,64 @@
   }
   html {
     scroll-behavior: smooth;
+  }
+  /* Apply Inter font to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Logo font utility class */
+.font-logo {
+  font-family: var(--font-logo);
+}
+
+/* Responsive Hero Image - Fully Optimized for all screen sizes */
+.responsive-hero-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  
+  /* Mobile (320px - 767px) */
+  aspect-ratio: 16 / 10;
+  border-radius: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Tablet (768px - 1023px) */
+  @media (min-width: 768px) {
+    aspect-ratio: 16 / 9;
+    border-radius: 0;
+  }
+  
+  /* Laptop (1024px - 1439px) */
+  @media (min-width: 1024px) {
+    aspect-ratio: 16 / 9;
+    border-radius: 0;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Desktop (1440px+) */
+  @media (min-width: 1440px) {
+    aspect-ratio: 16 / 9;
+    border-radius: 0;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image optimizations - Perfect centering and alignment */
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
   }
 }
 
