@@ -26,20 +26,24 @@ export function About() {
 
       <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image Side */}
+          {/* Video Side */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop"
-                alt="Professional cleaner at work"
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-black">
+              <video
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6277-ZcI3ep4wGvoLCN9LOl6XKAY8wLtPVm.MP4"
+                alt="Kleanera cleaning service video"
                 className="w-full h-full object-cover"
+                controls
+                loop
+                muted
+                preload="metadata"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent pointer-events-none" />
             </div>
           </motion.div>
 

@@ -47,7 +47,7 @@ export function Header() {
               alt="Kleanera Logo"
               width={44}
               height={44}
-              className="h-11 w-11 font-sans"
+              className="h-11 w-11"
               priority
             />
             <div className="flex flex-col font-sans">
